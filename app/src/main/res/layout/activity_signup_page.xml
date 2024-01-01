@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textviewsignup" />
 
     <EditText
-        android:id="@+id/Loginemail_text_signup"
+        android:id="@+id/nameSignUp"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginLeft="30dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/Password_signup"
+        android:id="@+id/emailSignUp"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginLeft="30dp"
@@ -85,12 +85,12 @@
         android:hint="Email or Phone Number"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/Loginemail_text_signup"
-        app:layout_constraintStart_toStartOf="@+id/Loginemail_text_signup"
-        app:layout_constraintTop_toBottomOf="@+id/Loginemail_text_signup" />
+        app:layout_constraintEnd_toEndOf="@+id/nameSignUp"
+        app:layout_constraintStart_toStartOf="@+id/nameSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/nameSignUp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/passwordSignUp"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginLeft="30dp"
@@ -103,9 +103,9 @@
         android:hint="Password"
         android:inputType="text"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/Password_signup"
-        app:layout_constraintStart_toStartOf="@+id/Password_signup"
-        app:layout_constraintTop_toBottomOf="@+id/Password_signup" />
+        app:layout_constraintEnd_toEndOf="@+id/emailSignUp"
+        app:layout_constraintStart_toStartOf="@+id/emailSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/emailSignUp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -114,9 +114,9 @@
         android:layout_marginTop="13dp"
         android:text="Or"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/passwordSignUp"
+        app:layout_constraintStart_toStartOf="@+id/passwordSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSignUp" />
 
     <TextView
         android:id="@+id/signup_with_text"

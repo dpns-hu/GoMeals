@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textviewsignup" />
 
     <EditText
-        android:id="@+id/Loginemail_text_signup"
+        android:id="@+id/emailLogin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/Password_signup"
+        android:id="@+id/passwordLoginn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -83,9 +83,9 @@
         android:hint="Password"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/Loginemail_text_signup"
-        app:layout_constraintStart_toStartOf="@+id/Loginemail_text_signup"
-        app:layout_constraintTop_toBottomOf="@+id/Loginemail_text_signup" />
+        app:layout_constraintEnd_toEndOf="@+id/emailLogin"
+        app:layout_constraintStart_toStartOf="@+id/emailLogin"
+        app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
 
     <TextView
         android:id="@+id/textView5"
@@ -94,9 +94,9 @@
         android:layout_marginTop="22dp"
         android:text="or"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/Password_signup"
-        app:layout_constraintStart_toStartOf="@+id/Password_signup"
-        app:layout_constraintTop_toBottomOf="@+id/Password_signup" />
+        app:layout_constraintEnd_toEndOf="@+id/passwordLoginn"
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginn"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginn" />
 
     <TextView
         android:id="@+id/textView6"
@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.079" />
 
     <Button
-        android:id="@+id/Googlesignuppage"
+        android:id="@+id/googleSignUpPage"
         android:layout_width="152dp"
         android:layout_height="57dp"
         android:layout_margin="20dp"
@@ -135,16 +135,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.079" />
 
-        <Button
-            android:id="@+id/Loginbuttonsignuppage"
-            android:layout_width="152dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="50dp"
-            android:text="Login"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/Googlesignuppage"
-            app:layout_constraintStart_toStartOf="@+id/facebooklogingpage"
-            app:layout_constraintTop_toBottomOf="@+id/facebooklogingpage" />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="152dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/googleSignUpPage"
+        app:layout_constraintStart_toStartOf="@+id/facebooklogingpage"
+        app:layout_constraintTop_toBottomOf="@+id/facebooklogingpage" />
 
     <TextView
         android:id="@+id/sentsignup_loginpage"
@@ -155,8 +156,8 @@
         android:text="Don't have an account"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Loginbuttonsignuppage"
-        app:layout_constraintStart_toStartOf="@+id/Loginbuttonsignuppage"
-        app:layout_constraintTop_toBottomOf="@+id/Loginbuttonsignuppage" />
+        app:layout_constraintEnd_toEndOf="@+id/loginButton"
+        app:layout_constraintStart_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
