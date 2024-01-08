@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/shortDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -77,11 +77,11 @@
         android:text="Ingredients"
         android:textColor="#100F0F"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintStart_toStartOf="@+id/shortDescription"
+        app:layout_constraintTop_toBottomOf="@+id/shortDescription" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/ingredients"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/addToCartButton"
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
@@ -105,5 +105,5 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/ingredients" />
 </androidx.constraintlayout.widget.ConstraintLayout>

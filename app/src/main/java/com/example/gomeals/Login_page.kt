@@ -15,8 +15,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.FirebaseDatabase
-import kotlin.math.log
-import kotlin.math.sign
+
 
 class Login_page : AppCompatActivity() {
     lateinit var binding: ActivityLoginPageBinding
@@ -26,6 +25,7 @@ class Login_page : AppCompatActivity() {
      lateinit var auth : FirebaseAuth
      lateinit var database : FirebaseDatabase
      lateinit var googleSignInClient :GoogleSignInClient
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginPageBinding.inflate(layoutInflater)
@@ -35,10 +35,9 @@ class Login_page : AppCompatActivity() {
 
           val signInOption = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
             googleSignInClient = GoogleSignIn.getClient(this,signInOption)
-        binding.loginButton.setOnClickListener {
+        binding.googleSignUpPage.setOnClickListener {
             val signInClient = googleSignInClient.signInIntent
-
-            launcher.lauch(signInClient)
+            launcher.launch(signInClient)
         }
      binding.sentsignupLoginpage.setOnClickListener {
          val intent = Intent(this,Signup_page::class.java)
@@ -54,12 +53,15 @@ class Login_page : AppCompatActivity() {
                 signInUser(email,password)
             }
         }
-    }    override fun onStart() {
+    }
+
+    override fun onStart() {
         super.onStart()
-        val currentUser = auth.currentUser
+         val currentUser = auth.currentUser
         if(currentUser!=null){
             updateUI()
         }
+
     }
 
     private fun signInUser(email: String, password: String) {
@@ -79,7 +81,7 @@ class Login_page : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-    private val laucher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         result->
             if(result.resultCode==Activity.RESULT_OK){
                       val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
@@ -89,6 +91,9 @@ class Login_page : AppCompatActivity() {
                     auth.signInWithCredential(credential).addOnCompleteListener {
                         if(it.isSuccessful){
                             Toast.makeText(this,"Login Successful",Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this,MainActivity::class.java))
+                            finish()
+
                         }else{
                             Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
                         }

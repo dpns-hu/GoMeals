@@ -38,8 +38,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,8 +68,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="textMultiLine"
-                android:text="Lorem ipsum is placeholder text  commonly used in the graphic,  print, and publishing industries  for previewing layouts and visual" />
+                android:inputType="textMultiLine" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,8 +96,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="textEmailAddress"
-                android:text="a@gmail" />
+                android:inputType="textEmailAddress" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,8 +125,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="phone"
-                android:text="123456789" />
+                android:inputType="phone" />
         </LinearLayout>
 
 
@@ -142,7 +138,7 @@
         android:layout_marginBottom="32dp">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
+            android:id="@+id/saveInformation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_shape"

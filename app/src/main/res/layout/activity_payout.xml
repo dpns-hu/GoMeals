@@ -42,13 +42,13 @@ android:layout_weight="1"
                 />
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/namePayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:ems="10"
-                android:text="Name" />
+                android:ems="10" />
         </LinearLayout>
         <LinearLayout
             android:layout_margin="10dp"
@@ -67,14 +67,14 @@ android:layout_weight="1"
                 />
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/addressPayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="textMultiLine"
-                android:text="This is the address to be used for the purpose" />
+                android:inputType="textMultiLine" />
         </LinearLayout>
         <LinearLayout
             android:layout_margin="10dp"
@@ -93,14 +93,14 @@ android:layout_weight="1"
                />
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phonePayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="phone"
-                android:text="+91 123455678" />
+                android:inputType="phone" />
         </LinearLayout>
         <LinearLayout
             android:layout_margin="10dp"
@@ -144,6 +144,7 @@ android:layout_weight="1"
              />
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/totalPricePayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|end"
@@ -153,8 +154,7 @@ android:layout_weight="1"
                 android:gravity="end"
                 android:inputType="none"
                 android:paddingEnd="32dp"
-                android:textColor="@color/textColor"
-                android:text="$400" />
+                android:textColor="@color/textColor" />
         </LinearLayout>
 
 
@@ -163,7 +163,7 @@ android:layout_weight="1"
     <androidx.appcompat.widget.AppCompatButton
         android:background="@drawable/button_shape"
         android:textAllCaps="false"
-        android:id="@+id/proceed_payoutActivity"
+        android:id="@+id/proceedPayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Proceed"

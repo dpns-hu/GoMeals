@@ -39,9 +39,9 @@ class SearchFragment : Fragment() {
         binding = FragmentSearchBinding.inflate(inflater,container,false)
 
 
-        adapter = MenuListAdapter(filterFoodName,filterFoodImage,filterFoodPrice,requireContext()   )
-        binding.SearchRV.layoutManager = LinearLayoutManager(requireContext())
-        binding.SearchRV.adapter = adapter
+//        adapter = MenuListAdapter(filterFoodName,filterFoodImage,filterFoodPrice,requireContext()   )
+//        binding.SearchRV.layoutManager = LinearLayoutManager(requireContext())
+//        binding.SearchRV.adapter = adapter
            codeForSearchView()
         showAllMenuItems()
         return binding.root
