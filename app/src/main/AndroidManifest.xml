@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".GoMealsApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,25 +14,25 @@
         android:theme="@style/Theme.GoMeals"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsActivity"
+            android:name=".presentation.activity.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".PayoutActivity"
+            android:name=".presentation.activity.PayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".Location_selection_page"
+            android:name=".presentation.activity.Location_selection_page"
             android:exported="false" />
         <activity
-            android:name=".Signup_page"
+            android:name=".presentation.activity.Signup_page"
             android:exported="false" />
         <activity
-            android:name=".Login_page"
+            android:name=".presentation.activity.Login_page"
             android:exported="false" />
         <activity
-            android:name=".first_page"
+            android:name=".presentation.activity.first_page"
             android:exported="false" />
         <activity
-            android:name=".Splash_screen"
+            android:name=".presentation.activity.Splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.activity.MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustPan" />
     </application>

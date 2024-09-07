@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".Fragments.BottomSheetFragment">
+    tools:context=".presentation.fragments.BottomSheetFragment">
 
 
     <ImageButton
