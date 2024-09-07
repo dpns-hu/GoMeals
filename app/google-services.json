@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "672804371988",
+    "firebase_url": "https://admin-gomeals-default-rtdb.firebaseio.com",
+    "project_id": "admin-gomeals",
+    "storage_bucket": "admin-gomeals.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672804371988:android:a2532a81f21bff70be3101",
+        "android_client_info": {
+          "package_name": "com.example.admingomeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672804371988-cuidcrsrmmt9k6m73jbmfjtre51c7khv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admingomeals",
+            "certificate_hash": "a351e260d404c845bce6402305e907e65467ff4d"
+          }
+        },
+        {
+          "client_id": "672804371988-mme8bunvrk9qnfrck5hk470spulforff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_2bqXLP1IdO2Hk485CugypR-EknlNiEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672804371988-mme8bunvrk9qnfrck5hk470spulforff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672804371988:android:ebf9055a801f1693be3101",
+        "android_client_info": {
+          "package_name": "com.example.gomeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672804371988-bvd70s9h16ppl3knrg29nrn8eg26apb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gomeals",
+            "certificate_hash": "aa098aa9d64254e255b6c4af596284f17a2a4694"
+          }
+        },
+        {
+          "client_id": "672804371988-d6ht7vi49c6l87ecp1spjnlk1u7busp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gomeals",
+            "certificate_hash": "a351e260d404c845bce6402305e907e65467ff4d"
+          }
+        },
+        {
+          "client_id": "672804371988-mme8bunvrk9qnfrck5hk470spulforff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_2bqXLP1IdO2Hk485CugypR-EknlNiEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672804371988-mme8bunvrk9qnfrck5hk470spulforff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,15 +1,93 @@
+# Gradle files
+.gradle/
+build/
+*/build/
+!gradle-wrapper.jar
+
+# Android Studio
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Local configuration files
 local.properties
+
+# Log files
+*.log
+
+# Mac-specific files
+.DS_Store
+
+# Android specific
+captures/
+.externalNativeBuild/
+.cxx/
+build/
+.gradle/
+local.properties
+*.keystore
+*.jks
+
+# Other files and directories
+*.tmp
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Node.js specific
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Python specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# IDEs
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+*.idea/
+*.iml
+*.iws
+*.ipr
+
+# Docker
+*.dockerignore
+Dockerfile*
+docker-compose*
+
+# System files
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Others
+*.class
+*.jar
+*.war
+*.ear
+
+# Environments
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+*.log.*
+
